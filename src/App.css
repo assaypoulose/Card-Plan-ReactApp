@@ -1,0 +1,88 @@
+:root{
+  --primary: black;
+  --secondary: cyan;
+  margin-top: 50px;
+}
+
+
+.App{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.heading{
+  color: crimson
+}
+.card{
+  background-color: white;
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 8px;
+  margin: 35px 20px;
+}
+
+.card:hover{
+  width: 30%;
+}
+
+.flex{
+  display:flex;
+  justify-content: space-around;
+}
+body{
+  background-color: black;
+  background: linear-gradient(180deg, var(--primary), var(--secondary));
+}
+.features{
+  list-style: none;
+  text-align: left;
+  border-top: 1px solid rgb(212, 205, 205);
+  padding-top: 20px;
+}
+.features > li{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.features > li::marker{
+  content: "✔️ ";
+}
+.card:nth-child(1) .features > li:nth-child(n+5)::marker{
+  content: "❌ ";
+}
+.card:nth-child(1) .features > li:nth-child(n+5){
+  opacity: 50%;
+}
+.card:nth-child(2) .features> li:nth-child(n+8)::marker{
+  content: "❌ ";
+}
+.card:nth-child(2) .features > li:nth-child(n+8){
+  opacity: 50%;
+}
+button {
+  width: 100%;
+  background-color: black;
+  border-color: cyan;
+  color:white;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  opacity: 80%;
+  transition: 1s;
+}
+button:hover{
+background-color: cyan;
+border-color: black;
+color: black;
+}
+.price{
+  font-size: 30px;
+  margin: 10px 0;
+}
+.price-duration{
+  font-size: 15px;
+}
+.plan-name{
+  color: black;
+  font-size: 35px;
+  letter-spacing: 1.5px;
+}
